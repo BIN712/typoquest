@@ -1,0 +1,100 @@
+wizard.png
+size:713,1032
+filter:Linear,Linear
+pma:true
+acc
+bounds:436,701,29,28
+offsets:1,1,31,30
+badan
+bounds:140,402,134,261
+offsets:0,12,146,273
+rotate:90
+ball
+bounds:529,39,119,119
+offsets:3,3,125,125
+ball api
+bounds:529,281,119,119
+offsets:3,3,125,125
+ball listrik
+bounds:529,160,119,119
+offsets:3,3,125,125
+belakang
+bounds:2,16,143,136
+offsets:0,0,144,142
+rotate:90
+belt
+bounds:436,662,26,37
+offsets:1,1,28,39
+cahaya
+bounds:337,8,195,190
+offsets:12,4,218,202
+rotate:90
+cahaya api
+bounds:140,2,195,190
+offsets:12,4,218,202
+cahaya listrik
+bounds:332,205,195,190
+offsets:12,4,218,202
+rotate:90
+jubah belakang
+bounds:140,538,269,294
+rotate:90
+jubah belakang depan
+bounds:403,402,120,258
+offsets:0,8,120,266
+rotate:90
+jubah tudung 1
+bounds:140,809,221,332
+rotate:90
+jubah tudung 2
+bounds:474,694,127,217
+offsets:0,0,172,281
+rotate:90
+kaki kanan
+bounds:474,925,105,235
+offsets:1,0,106,235
+rotate:90
+kaki kiri
+bounds:459,524,98,250
+rotate:90
+kepala
+bounds:139,194,206,191
+offsets:3,2,211,194
+rotate:90
+light
+bounds:41,5,13,9
+offsets:1,1,15,11
+mata
+bounds:436,731,76,30
+offsets:1,1,78,32
+rotate:90
+mata 2
+bounds:693,743,78,14
+offsets:0,8,78,32
+rotate:90
+mulut die
+bounds:2,4,37,10
+offsets:7,6,53,37
+mulut marah
+bounds:436,618,42,21
+offsets:7,2,53,37
+rotate:90
+mulut senyum
+bounds:698,888,35,13
+offsets:7,6,53,37
+rotate:90
+pouch
+bounds:650,337,63,58
+offsets:2,1,66,60
+rotate:90
+tangan kanan
+bounds:474,823,100,222
+offsets:1,0,101,222
+rotate:90
+tangan kiri
+bounds:464,624,68,240
+offsets:0,1,68,242
+rotate:90
+tongkat
+bounds:2,161,135,869
+offsets:14,4,162,878

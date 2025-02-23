@@ -1,0 +1,1 @@
+"use strict";const e=globalThis.C3;e.Plugins.MixonGames_EasySiteLock.Exps={IsLocked(){return this._isLocked}};

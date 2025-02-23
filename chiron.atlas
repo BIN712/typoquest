@@ -1,0 +1,43 @@
+chiron.png
+size:353,1020
+filter:Linear,Linear
+pma:true
+scale:0.93
+Layer20
+bounds:2,706,312,252
+offsets:0,1,313,253
+rotate:90
+badan
+bounds:2,392,180,312
+kaki 1
+bounds:184,454,74,250
+kaki 2
+bounds:2,134,104,256
+offsets:0,0,115,257
+kaki 3
+bounds:108,148,162,242
+offsets:0,0,174,243
+kaki 4
+bounds:140,17,129,211
+offsets:1,0,130,211
+rotate:90
+kaki 5
+bounds:272,266,58,182
+offsets:13,0,71,183
+kaki 6
+bounds:260,450,71,181
+offsets:0,0,73,181
+kepala
+bounds:2,2,130,136
+offsets:0,1,131,137
+rotate:90
+mulut bawah
+bounds:184,401,51,55
+offsets:0,2,52,59
+rotate:90
+tangan kanan
+bounds:260,633,78,190
+offsets:14,3,94,193
+tangan kiri
+bounds:256,825,93,193
+offsets:0,0,94,193
