@@ -1,0 +1,1 @@
+"use strict";{const s=globalThis.C3;s.Plugins.MixonGames_EasySiteLock.Type=class extends globalThis.ISDKObjectTypeBase{constructor(){super()}_onCreate(){}}}

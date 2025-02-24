@@ -1,0 +1,1 @@
+"use strict";{const s=globalThis.C3;s.Plugins.MixonGames_EasySiteLock=class extends globalThis.ISDKPluginBase{constructor(){super()}}}
