@@ -37,6 +37,24 @@ if (location.protocol.substr(0, 4) === "file")
 {
 	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
 }
+
+<script>
+        window.addEventListener("load", function() {
+            let audio = new Audio("./media/bs_menu.webm"); // Path ke musik
+            audio.loop = true; // Mengaktifkan looping
+            
+            // Coba memutar musik
+            audio.play().catch(error => {
+                console.log("Autoplay dicegah, menunggu interaksi pengguna.");
+            });
+
+            // Alternatif: Meminta interaksi pengguna
+            document.addEventListener("click", function() {
+                audio.play();
+            }, { once: true }); // Hanya memerlukan satu klik untuk memulai
+        });
+    </script>
+
 </script>
 	
 	<noscript>
