@@ -32,22 +32,24 @@
   }, false);
 </script>
 
-<audio id="bgMusic" src="./media/bs_menu.ogg" loop muted autoplay></audio>
-
 <script>
     window.addEventListener("load", function() {
-        let audio = document.getElementById("bgMusic");
+        let context = new (window.AudioContext || window.webkitAudioContext)();
+        let audio = new Audio("./media/bs_menu.webm");
+        let track = context.createMediaElementSource(audio);
+        track.connect(context.destination);
+        audio.loop = true;
 
-        // Coba autoplay dengan unmute setelah diputar
-        audio.muted = true;
-        audio.play().then(() => {
-            audio.muted = false;
-        }).catch(error => {
+        // Coba autoplay
+        audio.play().catch(error => {
             console.log("Autoplay dicegah, menunggu interaksi pengguna.");
         });
 
-        // Jika autoplay gagal, aktifkan dengan klik pertama user
+        // Aktifkan dengan klik pertama user
         document.addEventListener("click", function() {
+            if (context.state === "suspended") {
+                context.resume();
+            }
             audio.play();
         }, { once: true });
     });
