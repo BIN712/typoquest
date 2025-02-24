@@ -38,17 +38,20 @@ if (location.protocol.substr(0, 4) === "file")
 	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
 }
 
-<script>
+   <script>
         window.addEventListener("load", function() {
             let audio = new Audio("./media/bs_menu.webm"); // Path ke musik
             audio.loop = true; // Mengaktifkan looping
             
-            // Coba memutar musik
-            audio.play().catch(error => {
+            // Muted autoplay trick untuk menghindari pemblokiran browser
+            audio.muted = true;
+            audio.play().then(() => {
+                audio.muted = false; // Setelah berhasil play, unmute
+            }).catch(error => {
                 console.log("Autoplay dicegah, menunggu interaksi pengguna.");
             });
 
-            // Alternatif: Meminta interaksi pengguna
+            // Alternatif: Meminta interaksi pengguna jika autoplay gagal
             document.addEventListener("click", function() {
                 audio.play();
             }, { once: true }); // Hanya memerlukan satu klik untuk memulai
