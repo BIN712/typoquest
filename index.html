@@ -25,29 +25,6 @@
 <body>
 
 <script>
-    window.addEventListener("load", function() {
-        let context = new (window.AudioContext || window.webkitAudioContext)();
-        let audio = new Audio("./media/bs_menu.webm");
-        let track = context.createMediaElementSource(audio);
-        track.connect(context.destination);
-        audio.loop = true;
-
-        // Coba autoplay
-        audio.play().catch(error => {
-            console.log("Autoplay dicegah, menunggu interaksi pengguna.");
-        });
-
-        // Aktifkan dengan klik pertama user
-        document.addEventListener("click", function() {
-            if (context.state === "suspended") {
-                context.resume();
-            }
-            audio.play();
-        }, { once: true });
-    });
-</script>
-
-<script>
 if (location.protocol.substr(0, 4) === "file")
 {
 	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
