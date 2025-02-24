@@ -1,1 +1,0 @@
-"use strict";const e=globalThis.C3;e.Plugins.MixonGames_EasySiteLock.Cnds={OnChecked(){return!0},OnLocked(){return this._isLocked},IsLocked(){return this._isLocked}};

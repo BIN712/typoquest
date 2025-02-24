@@ -1,1 +1,0 @@
-"use strict";const e=globalThis.C3;e.Plugins.MixonGames_EasySiteLock.Acts={CheckDomain(){this.checkDomain()}};
