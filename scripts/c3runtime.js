@@ -4531,8 +4531,9 @@ self.C3_ExpressionFuncs = [
 			return () => f0("UI");
 		},
 		() => "board",
+		() => "UI",
 		() => 0,
-		() => "[outline=black]0",
+		() => "0",
 		() => "in",
 		() => "",
 		() => "BS",
@@ -4542,12 +4543,16 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "wizard",
 		() => "fire",
-		() => "crystal",
-		() => "environmentLight",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpInstVar();
+		},
+		() => "crystal",
+		() => "environmentLight",
 		() => "crystal created",
 		() => "2letter",
 		p => {
@@ -4639,16 +4644,16 @@ self.C3_ExpressionFuncs = [
 		() => 1,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => ("[outline=black]" + v0.GetValue());
+			return () => ("" + v0.GetValue());
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => and(("[outline=black]wave" + "\n"), v0.GetValue());
+			return () => and("", v0.GetValue());
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
-			return () => and("[outline=black]", f0(n1.ExpBehavior("score")));
+			return () => and("", f0(n1.ExpBehavior("score")));
 		},
 		() => "zOrder",
 		p => {
@@ -4840,10 +4845,6 @@ self.C3_ExpressionFuncs = [
 			return () => f0(n1.ExpObject(0, n2.ExpInstVar()), 1, 1);
 		},
 		p => {
-			const n0 = p._GetNode(0);
-			return () => n0.ExpInstVar();
-		},
-		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
 			const n2 = p._GetNode(2);
@@ -4957,7 +4958,6 @@ self.C3_ExpressionFuncs = [
 			const n6 = p._GetNode(6);
 			return () => f0("UI", f1("game", n2.ExpObject(), n3.ExpObject()), f4("game", n5.ExpObject(), n6.ExpObject()));
 		},
-		() => "UI",
 		() => "up",
 		p => {
 			const n0 = p._GetNode(0);
@@ -5008,12 +5008,12 @@ self.C3_ExpressionFuncs = [
 		() => 0.4,
 		() => "hit",
 		() => 70,
-		() => "empty",
 		() => "playerGetHit",
+		() => "empty",
 		() => 640,
 		() => -750,
 		() => "gameOver",
-		() => 60,
+		() => 80,
 		() => "question and answer",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -5091,6 +5091,22 @@ self.C3_ExpressionFuncs = [
 		() => "High Score Easy :",
 		() => "High Score Medium :",
 		() => "High Score Hard :",
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => ((n0.ExpInstVar() / n1.ExpInstVar()) * n2.ExpInstVar());
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0(110, 110, 110);
+		},
+		() => "trade",
+		() => "extra life already full",
+		() => "not enough weapon",
+		() => "https://www.typedojo.com/",
+		() => "NewWindow",
+		() => "https://www.kidztype.com/",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (("animation enemy 1 animation :" + "\n") + n0.ExpObject());
@@ -5191,6 +5207,7 @@ self.C3_ExpressionFuncs = [
 		() => "mainOpen",
 		() => "modeOpen",
 		() => "play",
+		() => 60,
 		() => "mainClose",
 		() => "modeClose",
 		() => "choose hero",
